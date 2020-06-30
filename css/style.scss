@@ -5,6 +5,7 @@ body {
 }
 
 .supheader {
+    
     background-color: $lightbg;
     .nav-link {
         display: block;
@@ -12,6 +13,10 @@ body {
         padding: 18px 20px;
         font-size: 13px;
         position: relative;
+        img {
+            max-width: 35px;
+            height: auto;
+        }
     }
 
     .nav-item {
@@ -28,10 +33,17 @@ body {
             background: #ffb0b0;
             transform: skew(-35deg);
         }
+
+        &:hover{
+            font-weight: 500;
+        }
     }
 
-    .active::before {
-        opacity: 0.9;
+    .active {
+        font-weight: 500;
+        &::before {
+            opacity: 0.9;
+        }
     }
 }
 
@@ -66,10 +78,20 @@ body {
             border-radius: 0;
             font-size: 17px;
             height: 56px;
-            padding-left: 22px;
+            padding-left: 60px;
             padding-right: 22px;
             font-weight: 700;
             margin-left: 5px;
+            position: relative;
+            img {
+                position: absolute;
+                top: 18%;
+                left: 10px;
+                width: auto;
+                height: 35px;
+            }
+            span {
+            }
         }
     }
 }

@@ -104,6 +104,11 @@ body {
   position: relative;
 }
 
+.supheader .nav-link img {
+  max-width: 35px;
+  height: auto;
+}
+
 .supheader .nav-item {
   position: relative;
   padding: 0 10px;
@@ -120,6 +125,14 @@ body {
   background: #ffb0b0;
   -webkit-transform: skew(-35deg);
           transform: skew(-35deg);
+}
+
+.supheader .nav-item:hover {
+  font-weight: 500;
+}
+
+.supheader .active {
+  font-weight: 500;
 }
 
 .supheader .active::before {
@@ -160,10 +173,19 @@ body {
   border-radius: 0;
   font-size: 17px;
   height: 56px;
-  padding-left: 22px;
+  padding-left: 60px;
   padding-right: 22px;
   font-weight: 700;
   margin-left: 5px;
+  position: relative;
+}
+
+.header .nav-btn img {
+  position: absolute;
+  top: 18%;
+  left: 10px;
+  width: auto;
+  height: 35px;
 }
 
 .subheader {
