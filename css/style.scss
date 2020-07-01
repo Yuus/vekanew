@@ -5,7 +5,6 @@ body {
 }
 
 .supheader {
-    
     background-color: $lightbg;
     .nav-link {
         display: block;
@@ -17,6 +16,22 @@ body {
             max-width: 35px;
             height: auto;
         }
+    }
+
+    .location {
+        position: relative;
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-height: 30px;
+            width: auto;
+        }
+        padding: 0 40px;
+        text-decoration: underline;
+        color: #b30000;
+        font-size: 16px;
+        //border-bottom: 1px dashed black;
     }
 
     .nav-item {
@@ -34,9 +49,13 @@ body {
             transform: skew(-35deg);
         }
 
-        &:hover{
+        &:hover {
             font-weight: 500;
         }
+    }
+
+    .nav-icon {
+        padding: 0;
     }
 
     .active {
@@ -49,10 +68,21 @@ body {
 
 .header {
     background: #fff;
-    .logo {
-        max-width: 200px;
-        height: auto;
-        padding-right: 20px;
+
+    .navbar-brand {
+
+        &-text {
+            font-size: 16px;
+            p{
+                margin: 6px 0;
+            }
+        }
+
+        &-logo {
+            max-width: 200px;
+            height: auto;
+            padding-right: 20px;
+        }
     }
 
     .nav {
@@ -89,8 +119,6 @@ body {
                 left: 10px;
                 width: auto;
                 height: 35px;
-            }
-            span {
             }
         }
     }

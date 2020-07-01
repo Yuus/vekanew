@@ -109,6 +109,22 @@ body {
   height: auto;
 }
 
+.supheader .location {
+  position: relative;
+  padding: 0 40px;
+  text-decoration: underline;
+  color: #b30000;
+  font-size: 16px;
+}
+
+.supheader .location img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 30px;
+  width: auto;
+}
+
 .supheader .nav-item {
   position: relative;
   padding: 0 10px;
@@ -131,6 +147,10 @@ body {
   font-weight: 500;
 }
 
+.supheader .nav-icon {
+  padding: 0;
+}
+
 .supheader .active {
   font-weight: 500;
 }
@@ -143,7 +163,15 @@ body {
   background: #fff;
 }
 
-.header .logo {
+.header .navbar-brand-text {
+  font-size: 16px;
+}
+
+.header .navbar-brand-text p {
+  margin: 6px 0;
+}
+
+.header .navbar-brand-logo {
   max-width: 200px;
   height: auto;
   padding-right: 20px;
