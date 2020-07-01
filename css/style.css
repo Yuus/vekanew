@@ -231,4 +231,139 @@ body {
   line-height: 1;
   font-weight: 700;
 }
+
+.footer {
+  border-top: 2px solid #eef0f1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 30px;
+  color: #990100;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #990100;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+}
+
+.footer__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+}
+
+.footer__logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.footer__text {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+.footer__tel {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.footer__tel a:hover {
+  color: #cd3301;
+}
+
+.footer__title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer__item {
+  line-height: 25px;
+}
+
+.footer__item:hover {
+  color: #cd3301;
+}
+
+.subfooter {
+  background: #555454;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.subfooter__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subfooter a,
+.subfooter p {
+  color: #ffffff;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 20px;
+}
+
+.subfooter__wrapper-col p {
+  margin: 15px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subfooter__wrapper-col a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 20px;
+}
+
+.subfooter__wrapper-col a:hover {
+  color: #cd3301;
+}
+
+.subfooter__wrapper-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
