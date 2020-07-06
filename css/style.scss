@@ -4,6 +4,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .supheader {
     background-color: $lightbg;
     .nav-link {
@@ -136,6 +142,17 @@ body {
             font-weight: 700;
         }
     }
+}
+
+.mainslider{
+    &__img{
+        height: 60vh;
+        object-fit: cover;
+    }
+}
+
+.productsCategories{
+    margin: 30px 0 0 0;
 }
 
 @import "_footer";

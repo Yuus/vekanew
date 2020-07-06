@@ -92,6 +92,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .supheader {
   background-color: #ffffff;
 }
@@ -232,12 +238,18 @@ body {
   font-weight: 700;
 }
 
+.mainslider__img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.productsCategories {
+  margin: 30px 0 0 0;
+}
+
 .footer {
   border-top: 2px solid #eef0f1;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #ffffff;
   padding-top: 30px;
   color: #990100;
