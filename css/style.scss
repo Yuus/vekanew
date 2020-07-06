@@ -2,16 +2,20 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-header{
+header {
+    z-index: 500;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .supheader {
-    background-color: $lightbg;
     .nav-link {
         display: block;
         color: #b30000;
@@ -70,16 +74,18 @@ header{
             opacity: 0.9;
         }
     }
+
+    .navbar {
+        padding: 0;
+    }
 }
 
 .header {
-    background: #fff;
 
     .navbar-brand {
-
         &-text {
             font-size: 16px;
-            p{
+            p {
                 margin: 6px 0;
             }
         }
@@ -144,15 +150,114 @@ header{
     }
 }
 
-.mainslider{
-    &__img{
-        height: 60vh;
+.mainslider {
+    &__img {
+        height: 100vh;
         object-fit: cover;
     }
 }
 
-.productsCategories{
-    margin: 30px 0 0 0;
+.productsCategories {
+    margin: 50px 0;
+    &__row {
+        margin: 25px 0;
+    }
+
+    &__title {
+        margin: 0 0 40px 0;
+        color: #b30000;
+    }
+
+    .card {
+        border-radius: 0;
+        opacity: 0.85;
+        &:hover {
+            z-index: 2;
+            opacity: 1;
+            //transform: scale(1.1);
+        }
+        transition: 1s;
+        
+        &-title{
+            color: #b30000;
+        }
+    }
+}
+
+.moreDetails {
+    background-color: $lightbg;
+    padding: 50px 0;
+
+    &__title {
+        margin: 0 0 40px 0;
+        color: #b30000;
+    }
+
+    &__text {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        &-item {
+            text-align: center;
+            border-right: 2px solid #e5e8ea;
+        }
+    }
+
+    .item-top {
+        display: block;
+        font-size: 43px;
+        font-weight: 900;
+        padding: 0 0 10px 0;
+    }
+
+    .item-text {
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+        max-width: 70%;
+    }
+
+    .item-last{
+        border-right:none;
+    }
+}
+
+.partners {
+    padding: 50px 0;
+    background-color: $lightbg;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #b30000;
+    }
+
+    &__item {
+        max-width: 70%;
+    }
+}
+
+.categoriesMenu{
+    &__title{
+        text-align: center;
+        margin-bottom: 80px;
+        color: #b30000;
+    }
+
+    .card{
+        text-align: center;
+        border: none;
+        color: #b30000;
+        .card-img-top{
+            align-self: center;
+            width:  150px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
 }
 
 @import "_footer";
+
+@import "_header&footer-mediaQuery";

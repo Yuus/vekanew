@@ -6,14 +6,17 @@
     <title>veka.ru</title>
 
 
-    <script src="/Js/bootstrap.min.js"></script>
-    <script src="/Js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="/Js/code.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="/js/code.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link
@@ -58,9 +61,9 @@
                             <li class="nav-item nav-icon">
                                 <a class="nav-link" href="#"><img src="/img/telegram.png" alt=""></a>
                             </li>
-                            <li class="nav-item nav-loginbtn">
+                            <!--<li class="nav-item nav-loginbtn">
                                 <a class="nav-link" href="#"><img src="/img/login-new.png" alt=""></a>
-                            </li>
+                            </li>-->
                         </ul>
 
                     </div>
@@ -106,46 +109,222 @@
         </div>
     </header>
 
-        <div id="slider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                <li data-target="#slider" data-slide-to="1"></li>
-                <li data-target="#slider" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/mainsliders/wallpaper2.jpg" class="d-block w-100 mainslider__img" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <div id="topslider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#topslider" data-slide-to="0" class="active"></li>
+            <li data-target="#topslider" data-slide-to="1"></li>
+            <li data-target="#topslider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/mainsliders/wallpaper2.jpg" class="d-block w-100 mainslider__img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/mainsliders/wallpaper2.jpg" class="d-block w-100 mainslider__img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/mainsliders/wallpaper3.png" class="d-block w-100 mainslider__img" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#topslider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#topslider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="moreDetails">
+        <div class="container">
+            <h2 class="moreDetails__title text-center">
+                О компании Akfa
+            </h2>
+            <div class="moreDetails__text">
+                Компания VEKA Rus является дочерней производственной компанией концерна VEKA AG – мирового лидера в
+                области разработки и производства оконных и дверных систем из высококачественного пластика. Компания
+                VEKA AG работает на рынке с 1969 года. Головное предприятие находится в г. Зенденхорст, ФРГ, Северный
+                Рейн-Вестфалия. Производственные дочерние компании концерна, помимо Германии, работают в США, Канаде,
+                Бельгии, Великобритании, Польше, Китае, Испании, Франции. В мире действует развитая сеть коммерческих
+                представительств VEKA, ведущих свою деятельность в странах Латинской Америки, Индии, Сингапуре, Румынии.
+                На сегодняшний день VEKA является одним из крупнейших в мире производителей пластикового профиля для
+                оконных и дверных конструкций. Все производства группы компаний VEKA ведут свою деятельность под
+                постоянным контролем главного предприятия в Германии, определяющего единый для всех предприятий стандарт
+                качества, независимо от страны производства.
+            </div>
+            <div class="moreDetails__wrapper d-flex flex-wrap">
+                <div class="moreDetails__wrapper-item col-lg-3">
+                    <div class="item-top">
+                        1995
+                    </div>
+                    <div class="item-text">
+                        начало поставок профиля VEKA в Россию
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/mainsliders/wallpaper2.jpg" class="d-block w-100 mainslider__img" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="moreDetails__wrapper-item col-lg-3">
+                    <div class="item-top">
+                        440
+                    </div>
+                    <div class="item-text">
+                        сотрудников работает в настоящее время на предприятии VEKA Rus
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/mainsliders/wallpaper3.png" class="d-block w-100 mainslider__img" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <div class="moreDetails__wrapper-item col-lg-3">
+                    <div class="item-top">
+                        1024
+                    </div>
+                    <div class="item-text">
+                        компании-партнера в России и СНГ
+                    </div>
+                </div>
+                <div class="moreDetails__wrapper-item col-lg-3 item-last">
+                    <div class="item-top">
+                        40
+                    </div>
+                    <div class="item-text">
+                        продукция концерна экспортируется в более чем 40 стран мира
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#mainslider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+    </div>
 
+    <div class="productsCategories">
+        <div class="container">
+            <h2 class="productsCategories__title text-center">Пластиковые окна</h2>
+            <div class="card-deck productsCategories__row">
+                <div class="card">
+                    <img src="/img/ProductCategories/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Простое окно</h5>
+                        <p class="card-text">Если вам необходимо недорогое, но качественное решение для остекления.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/ProductCategories/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Окно с защитой от шума</h5>
+                        <p class="card-text">Мы рекомендуем это решение для квартир и коттеджей, находящихся в
+                            непосредственной близости от автомагистралей, дорог с оживлённым движением, аэропортов и
+                            прочих источников шума.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/ProductCategories/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Окно для детской</h5>
+                        <p class="card-text">Это специальное окно сделает детскую комнату максимально безопасной. Окно
+                            открывается только на проветривание. Для полного открытия окна необходим ключ.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck productsCategories__row">
+                <div class="card">
+                    <img src="/img/ProductCategories/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Противовзломные окна</h5>
+                        <p class="card-text">Противовзломные окна изготовлены так, чтобы максимально обезопасить Ваше
+                            жилье от проникновения злоумышленников. Расскажем, чем окна с защитой от взлома отличаются
+                            от обычных пластиковых окон и на что обратить внимание при их покупке.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/ProductCategories/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Энергоэффективное окно</h5>
+                        <p class="card-text">Энергоэффективные пластиковые окна сохраняют микроклимат внутри помещения,
+                            уменьшают расходы на отопление зимой и на кондиционирование летом. Каждый компонент окна —
+                            рама, стеклопакет и фурнитура — вносят свой вклад в энергосбережение.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/ProductCategories/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Окно с солнцезащитой</h5>
+                        <p class="card-text">Солнцезащитные окна – одно из условий комфорта и здорового микроклимата в
+                            Вашем доме или офисе. Они защищают помещение от солнечных лучей и вдобавок обладают
+                            энергосберегающими свойствами.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="categoriesMenu">
+        <div class="container">
+            <h2 class="categoriesMenu__title">Все типовые решения VEKA</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/CategoriesMenu/1.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="card-text">Пластиковые окна</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/CategoriesMenu/2.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="card-text">Решение для коттеджей и загородных домов</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/CategoriesMenu/3.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="card-text">Пластиковые двери</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/CategoriesMenu/4.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="card-text">Остекление балконов и лоджий</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="partners">
+        <div class="container">
+            <h2 class="partners__title">
+                Наши партнеры
+            </h2>
+            <div class="partners__wrapper owl-carousel" id="carouselPartners">
+                <div class="partners__item">
+                    <div class="partners__item-icon"><img src="/img/Partners/imzo-logo.jpg" alt=""></div>
+                </div>
+                <div class="partners__item">
+                    <div class="partners__item-icon"><img src="/img/Partners/benkam-logo.jpg" alt=""></div>
+                </div>
+                <div class="partners__item">
+                    <div class="partners__item-icon"><img src="/img/Partners/engelberg-logo.jpg" alt=""></div>
+                </div>
+                <div class="partners__item">
+                    <div class="partners__item-icon"><img src="/img/Partners/logo-artel.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -172,16 +351,16 @@
                         <a href="#" class="footer__item">Продукция</a>
                         <a href="#" class="footer__item">Помощь в выборе</a>
                         <a href="#" class="footer__item">Калькулятор</a>
-                        <a href="#" class="footer__item">Где купить</a>
                         <a href="#" class="footer__item">Отзывы</a>
                     </ul>
                 </div>
                 <div class="footer__col">
                     <div class="footer__title">
-                        ИНТЕРНЕТ-МАГАЗИН
+                        
                     </div>
                     <ul class="footer__nav">
                         <a href="#" class="footer__item">Справочник покупателя</a>
+                        <a href="#" class="footer__item">Где купить</a>
                         <a href="#" class="footer__item">Карьера</a>
                         <a href="#" class="footer__item">О компании</a>
                         <a href="#" class="footer__item">Акции</a>

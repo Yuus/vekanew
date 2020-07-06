@@ -7,7 +7,7 @@
     background-color: $lightbg;
     padding-top: 30px;
     color: $darkredtextbg;
-    font-size: 12px;
+    font-size: 14px;
     a {
         color: $darkredtextbg;
         display: block;
@@ -40,7 +40,7 @@
     }
 
     &__tel {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         margin-bottom: 30px;
         a:hover {
@@ -64,7 +64,7 @@
 .subfooter {
     background: $darkgrey;
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     &__wrapper {
         display: flex;
         flex-direction: row;
