@@ -115,6 +115,7 @@ header {
             padding-bottom: 15px;
         }
         &-btn {
+            transition: .3s;
             color: #b30000;
             border: 2px solid #b30000;
             border-radius: 0;
@@ -125,12 +126,13 @@ header {
             font-weight: 700;
             margin-left: 5px;
             position: relative;
-            img {
-                position: absolute;
-                top: 18%;
-                left: 10px;
-                width: auto;
-                height: 35px;
+
+            background: url("/img/tel-black.svg") no-repeat 10px 50%;
+            background-size: 35px;
+            &:hover{
+                background: url("/img/tel-white.svg") no-repeat 10px 50%, #b30000;
+                color: #fff;
+                background-size: 35px;
             }
         }
     }
@@ -221,6 +223,31 @@ header {
     .item-last{
         border-right:none;
     }
+
+    &__btn {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin: 60px 0 0 0;
+        .nav-btn{
+            transition: .3s;
+            color: #b30000;
+            border: 2px solid #b30000;
+            border-radius: 0;
+            font-size: 17px;
+            height: 56px;
+            padding: 0 22px;
+            font-weight: 700;
+            margin-left: 5px;
+            position: relative;
+
+            &:hover{
+                background-color: #b30000;
+                color: #fff;
+            }
+        }
+
+    }
 }
 
 .partners {
@@ -239,6 +266,7 @@ header {
 }
 
 .categoriesMenu{
+    
     &__title{
         text-align: center;
         margin-bottom: 80px;

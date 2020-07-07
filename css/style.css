@@ -193,6 +193,8 @@ header {
 }
 
 .header .nav-btn {
+  -webkit-transition: .3s;
+  transition: .3s;
   color: #b30000;
   border: 2px solid #b30000;
   border-radius: 0;
@@ -203,14 +205,14 @@ header {
   font-weight: 700;
   margin-left: 5px;
   position: relative;
+  background: url("/img/tel-black.svg") no-repeat 10px 50%;
+  background-size: 35px;
 }
 
-.header .nav-btn img {
-  position: absolute;
-  top: 18%;
-  left: 10px;
-  width: auto;
-  height: 35px;
+.header .nav-btn:hover {
+  background: url("/img/tel-white.svg") no-repeat 10px 50%, #b30000;
+  color: #fff;
+  background-size: 35px;
 }
 
 .subheader {
@@ -299,6 +301,38 @@ header {
 
 .moreDetails .item-last {
   border-right: none;
+}
+
+.moreDetails__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0 0 0;
+}
+
+.moreDetails__btn .nav-btn {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #b30000;
+  border: 2px solid #b30000;
+  border-radius: 0;
+  font-size: 17px;
+  height: 56px;
+  padding: 0 22px;
+  font-weight: 700;
+  margin-left: 5px;
+  position: relative;
+}
+
+.moreDetails__btn .nav-btn:hover {
+  background-color: #b30000;
+  color: #fff;
 }
 
 .partners {
