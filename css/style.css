@@ -325,7 +325,6 @@ header {
 .categoriesMenu .card {
   text-align: center;
   border: none;
-  color: #b30000;
 }
 
 .categoriesMenu .card .card-img-top {
@@ -336,6 +335,11 @@ header {
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.categoriesMenu .card-text {
+  color: #b30000;
+  cursor: pointer;
 }
 
 .footer {

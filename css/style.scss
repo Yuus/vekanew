@@ -248,12 +248,16 @@ header {
     .card{
         text-align: center;
         border: none;
-        color: #b30000;
         .card-img-top{
             align-self: center;
             width:  150px;
             height: 100px;
             object-fit: contain;
+        }
+
+        &-text{
+            color: #b30000;
+            cursor: pointer;
         }
     }
 }
