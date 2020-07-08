@@ -1,11 +1,9 @@
 .footer {
-    border-top: 2px solid #eef0f1;;
     //position: fixed;
     //left: 0;
     //bottom: 0;
     //width: 100%;
     background-color: $lightbg;
-    padding-top: 30px;
     color: $darkredtextbg;
     font-size: 14px;
     a {
@@ -98,4 +96,13 @@
         flex-direction: row;
         margin-bottom: 20px;
     }
+}
+
+.supfooter {
+    margin-bottom: 30px;
+    background: url("/img/supfooter-bg1.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
 }

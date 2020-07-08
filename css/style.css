@@ -377,9 +377,7 @@ header {
 }
 
 .footer {
-  border-top: 2px solid #eef0f1;
   background-color: #ffffff;
-  padding-top: 30px;
   color: #990100;
   font-size: 14px;
 }
@@ -505,6 +503,15 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 20px;
+}
+
+.supfooter {
+  margin-bottom: 30px;
+  background: url("/img/supfooter-bg1.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 0;
 }
 
 @media (max-width: 992px) {
