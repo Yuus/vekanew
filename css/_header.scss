@@ -1,4 +1,4 @@
-header {
+.main-header {
     z-index: 500;
     width: 100%;
     position: fixed;
@@ -7,7 +7,12 @@ header {
     background: rgba(255, 255, 255, 0.85);
 }
 
+.main-header.out {
+    background: #fff;
+  }
+
 .supheader {
+    transition: all .3s ease;
     .nav-link {
         display: block;
         color: #b30000;
@@ -69,14 +74,23 @@ header {
 
     .navbar {
         padding: 0;
+        height: 55px;
     }
 }
+
+.supheader.out {
+    transform: translateY(-100%);
+    margin-top: -55px;
+  }
 
 .header {
 
     .navbar-brand {
         &-text {
-            font-size: 16px;
+            text-align: center;
+            color: #000000;
+            font-weight: 500;
+            font-size: 18px;
             p {
                 margin: 6px 0;
             }
@@ -104,7 +118,6 @@ header {
             font-weight: 700;
             font-size: 30px;
             color: #b30000;
-            padding-bottom: 15px;
         }
         &-btn {
             transition: .3s;
@@ -120,11 +133,20 @@ header {
             position: relative;
 
             background: url("/img/tel-black.svg") no-repeat 10px 50%;
-            background-size: 35px;
+            background-size: 50px;
             &:hover{
                 background: url("/img/tel-white.svg") no-repeat 10px 50%, #b30000;
                 color: #fff;
-                background-size: 35px;
+                background-size: 50px;
+            }
+
+            &-login{
+                background: url("/img/login-icon-black.svg") no-repeat 10px 50%;
+                background-size: 45px;
+                &:hover{
+                    background: url("/img/login-icon-white.svg") no-repeat 10px 50%, #b30000;
+                    background-size: 45px;
+                }
             }
         }
     }

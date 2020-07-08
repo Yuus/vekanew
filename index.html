@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <div class="supheader">
             <div class="container">
                 <nav class="navbar navbar-expand-md">
@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="#">Партнёрам</a>
                             </li>-->
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Дилерам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">AKFA Professional</a>
@@ -80,12 +80,16 @@
                         </div>
                     </a>
                     <div class="nav-item">
-                        <a class="nav-link" href="tel:+996554666668"><span>(+996) 554 666 688</span></a>
-                        <p class="nav-linkinfo">Режим работы 24/7</p>
+                        <a class="nav-link" href="tel:+996554666668"><span>+996 554 666 688</span></a>
+                        <!--<p class="nav-linkinfo">Режим работы 24/7</p>-->
                     </div>
                     <form class="form-inline ml-auto">
-                        <button class="btn my-2 my-sm-0 nav-btn" type="submit"> <span>Заказать
-                                звонок</span></button>
+                        <a href="#">
+                            <button class="btn my-2 my-sm-0 nav-btn" type="submit"> <span>Заказать звонок</span></button>
+                        </a>
+                        <a href="#">
+                            <button class="btn my-2 my-sm-0 nav-btn nav-btn-login" type="submit"> <span>Личный кабинет</span></button> 
+                        </a>
                     </form>
                 </nav>
             </div>
@@ -186,10 +190,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="moreDetails__btn">
                 <!--<form class="form-inline ml-auto">-->
-                    <button class="btn my-2 my-sm-0 nav-btn" type="submit"><span>Подробнее о компании</span></button>
+                    <a href="#">
+                <button class="btn my-2 my-sm-0 nav-btn" type="submit"><span>Подробнее о компании</span></button>
+                    </a>
                 <!--</form>-->
             </div>
         </div>
@@ -368,7 +374,7 @@
                 </div>
                 <div class="footer__col">
                     <div class="footer__title">
-                        
+
                     </div>
                     <ul class="footer__nav">
                         <a href="#" class="footer__item">Справочник покупателя</a>

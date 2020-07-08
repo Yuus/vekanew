@@ -84,13 +84,22 @@ body {
   line-height: 20px;
 }
 
-header {
+.main-header {
   z-index: 500;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.85);
+}
+
+.main-header.out {
+  background: #fff;
+}
+
+.supheader {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .supheader .nav-link {
@@ -158,10 +167,20 @@ header {
 
 .supheader .navbar {
   padding: 0;
+  height: 55px;
+}
+
+.supheader.out {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  margin-top: -55px;
 }
 
 .header .navbar-brand-text {
-  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .header .navbar-brand-text p {
@@ -189,7 +208,6 @@ header {
   font-weight: 700;
   font-size: 30px;
   color: #b30000;
-  padding-bottom: 15px;
 }
 
 .header .nav-btn {
@@ -206,13 +224,23 @@ header {
   margin-left: 5px;
   position: relative;
   background: url("/img/tel-black.svg") no-repeat 10px 50%;
-  background-size: 35px;
+  background-size: 50px;
 }
 
 .header .nav-btn:hover {
   background: url("/img/tel-white.svg") no-repeat 10px 50%, #b30000;
   color: #fff;
-  background-size: 35px;
+  background-size: 50px;
+}
+
+.header .nav-btn-login {
+  background: url("/img/login-icon-black.svg") no-repeat 10px 50%;
+  background-size: 45px;
+}
+
+.header .nav-btn-login:hover {
+  background: url("/img/login-icon-white.svg") no-repeat 10px 50%, #b30000;
+  background-size: 45px;
 }
 
 .subheader {

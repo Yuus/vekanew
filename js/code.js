@@ -18,4 +18,22 @@ $(document).ready(function () {
             }
         }
     });
+
+    var supheader = $('.supheader')
+    var header = $('.main-header'),
+        scrollPrev = 0;
+
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+
+        if (scrolled > 100 && scrolled > scrollPrev) {
+            supheader.addClass('out');
+            header.addClass('out');
+        } else {
+            supheader.removeClass('out');
+            header.removeClass('out');
+        }
+        
+        scrollPrev = scrolled;
+    });
 });
