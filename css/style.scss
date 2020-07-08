@@ -8,6 +8,7 @@ body {
 
 @import "_header";
 
+//Главная страница
 .mainslider {
     &__img {
         height: 100vh;
@@ -35,8 +36,8 @@ body {
             //transform: scale(1.1);
         }
         transition: 1s;
-        
-        &-title{
+
+        &-title {
             color: #b30000;
         }
     }
@@ -76,17 +77,17 @@ body {
         max-width: 70%;
     }
 
-    .item-last{
-        border-right:none;
+    .item-last {
+        border-right: none;
     }
 
     &__btn {
         display: flex;
-        justify-content:center;
-        align-items:center;
+        justify-content: center;
+        align-items: center;
         margin: 60px 0 0 0;
-        .nav-btn{
-            transition: .3s;
+        .nav-btn {
+            transition: 0.3s;
             color: #b30000;
             border: 2px solid #b30000;
             border-radius: 0;
@@ -97,12 +98,11 @@ body {
             margin-left: 5px;
             position: relative;
 
-            &:hover{
+            &:hover {
                 background-color: #b30000;
                 color: #fff;
             }
         }
-
     }
 }
 
@@ -121,27 +121,235 @@ body {
     }
 }
 
-.categoriesMenu{
-    
-    &__title{
+.categoriesMenu {
+    &__title {
         text-align: center;
         margin-bottom: 80px;
         color: #b30000;
     }
 
-    .card{
+    .card {
         text-align: center;
         border: none;
-        .card-img-top{
+        .card-img-top {
             align-self: center;
-            width:  150px;
+            width: 150px;
             height: 100px;
             object-fit: contain;
         }
 
-        &-text{
+        &-text {
             color: #b30000;
             cursor: pointer;
+        }
+    }
+}
+
+//Конец главной страницы
+
+//Страница Каталог
+.breadcrumb {
+    margin: 20px 0;
+    font-size: 14px;
+    background: #fff;
+    &-item {
+        a {
+            color: #b30000;
+        }
+    }
+}
+
+.mainCategories__header {
+    margin: 199px 0 0 0;
+    background: url("https://backend.akfagroup.uz:8443/akfagroup-api-build/rest/resource/section/c040842d-ae65-4979-8ed2-7e1e10d3f014_header.png") no-repeat 50% 50%;
+    background-size: cover;
+    padding: 90px 0 50px 0;
+
+    &-inner {
+        color: #fff;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 55px;
+            line-height: 60px;
+        }
+        h4 {
+            width: 70%;
+            margin: 2.415vw 0 0 0;
+            font-weight: 400;
+        }
+    }
+
+    &-bottom {
+        background-color: $darkredtextbg;
+        padding: 50px 0;
+
+        .item-top {
+            display: block;
+            font-size: 60px;
+            font-weight: 400;
+            padding: 0 10px 0 0;
+            align-self: center;
+        }
+    
+        .item-text {
+            font-size: 16px;
+            line-height: 20px;
+            display: inline-block;
+            max-width: 60%;
+            align-self: center;
+        }
+    }
+
+    &-item {
+        color: #fff;
+    }
+    
+}
+
+.catalogCategories-nav{
+    padding: 50px 0;
+    font-size: 20px;
+    .nav-tabs .nav-link {
+        border: 2px solid transparent;
+    }
+
+    .nav-link{
+        font-weight: 500;
+        color: #495057;
+        border: none;
+    }
+    
+    .nav-link.active{
+    color: #b30000;
+    border: none;
+    //border-color: #b30000 #b30000 #fff;
+    }
+}
+
+.products{
+    .card{
+        margin-bottom: 25px;
+        border: none;
+        background-color: #1e1e1e;
+        border-radius: 0;
+        overflow: hidden;
+        .card-img{
+            transition: 1s;
+            object-fit: cover;
+            height: 100%;
+            border-radius: 0;
+        }
+        &:hover{
+            .card-img{
+                transform: scale(1.1);
+            } 
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //margin: 60px 0 0 0;
+        .nav-btn {
+            transition: 0.3s;
+            color: #b30000;
+            border: 2px solid #b30000;
+            border-radius: 0;
+            font-size: 17px;
+            height: 56px;
+            padding: 0 22px;
+            font-weight: 700;
+            margin-left: 5px;
+            position: relative;
+
+            &:hover {
+                background-color: #b30000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.advertising{
+    padding: 50px 0;
+    
+    &__title {
+        margin: 0 0 40px 0;
+        color: #b30000;
+    }
+
+    .card{
+        align-items: center;
+        text-align: center;
+        border: none;
+        &-text{
+            font-size: 14px;
+            font-family: "PT Sans", Arial, sans-serif;
+        }
+        &-body {
+            padding: 20px 0; 
+        }
+    }
+    .card-img-top{
+        width: 110px;
+        border-radius: 50%;
+        background: #ebebeb;
+    }
+}
+
+.leaveRequest{
+    margin: 100px 0 0 0;
+    padding: 100px 0;
+    background: url("/img/leaveRequst-bg.jpg") no-repeat 50% 20%;
+    background-size: cover;
+    .card{
+        border: none;
+        border-radius: 0;
+        &-title{
+            font-size: 35px;
+            font-weight: 400;
+            color: #b30000;
+            margin: 30px 0;
+        }
+        
+        &-text{
+            font-size: 19px;
+            line-height: 28px;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .form-control{
+        border-radius: 0;
+        padding: 20px 15px;
+    }
+
+    &__btn {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0 20px 0;
+        .nav-btn {
+            transition: 0.3s;
+            background-color: #b30000;
+            color: #fff;
+            border: 2px solid #b30000;
+            border-radius: 0;
+            font-size: 17px;
+            height: 56px;
+            padding: 0 55px;
+            font-weight: 700;
+            position: relative;
+
+            &:hover {
+                background: #fff;
+                color: #b30000;
+            }
         }
     }
 }

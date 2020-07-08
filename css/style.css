@@ -345,8 +345,8 @@ body {
 }
 
 .moreDetails__btn .nav-btn {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #b30000;
   border: 2px solid #b30000;
   border-radius: 0;
@@ -402,6 +402,247 @@ body {
 .categoriesMenu .card-text {
   color: #b30000;
   cursor: pointer;
+}
+
+.breadcrumb {
+  margin: 20px 0;
+  font-size: 14px;
+  background: #fff;
+}
+
+.breadcrumb-item a {
+  color: #b30000;
+}
+
+.mainCategories__header {
+  margin: 199px 0 0 0;
+  background: url("https://backend.akfagroup.uz:8443/akfagroup-api-build/rest/resource/section/c040842d-ae65-4979-8ed2-7e1e10d3f014_header.png") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 90px 0 50px 0;
+}
+
+.mainCategories__header-inner {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainCategories__header-inner h2 {
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.mainCategories__header-inner h4 {
+  width: 70%;
+  margin: 2.415vw 0 0 0;
+  font-weight: 400;
+}
+
+.mainCategories__header-bottom {
+  background-color: #990100;
+  padding: 50px 0;
+}
+
+.mainCategories__header-bottom .item-top {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  padding: 0 10px 0 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainCategories__header-bottom .item-text {
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  max-width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainCategories__header-item {
+  color: #fff;
+}
+
+.catalogCategories-nav {
+  padding: 50px 0;
+  font-size: 20px;
+}
+
+.catalogCategories-nav .nav-tabs .nav-link {
+  border: 2px solid transparent;
+}
+
+.catalogCategories-nav .nav-link {
+  font-weight: 500;
+  color: #495057;
+  border: none;
+}
+
+.catalogCategories-nav .nav-link.active {
+  color: #b30000;
+  border: none;
+}
+
+.products .card {
+  margin-bottom: 25px;
+  border: none;
+  background-color: #1e1e1e;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.products .card .card-img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  border-radius: 0;
+}
+
+.products .card:hover .card-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__btn .nav-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #b30000;
+  border: 2px solid #b30000;
+  border-radius: 0;
+  font-size: 17px;
+  height: 56px;
+  padding: 0 22px;
+  font-weight: 700;
+  margin-left: 5px;
+  position: relative;
+}
+
+.products__btn .nav-btn:hover {
+  background-color: #b30000;
+  color: #fff;
+}
+
+.advertising {
+  padding: 50px 0;
+}
+
+.advertising__title {
+  margin: 0 0 40px 0;
+  color: #b30000;
+}
+
+.advertising .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+}
+
+.advertising .card-text {
+  font-size: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.advertising .card-body {
+  padding: 20px 0;
+}
+
+.advertising .card-img-top {
+  width: 110px;
+  border-radius: 50%;
+  background: #ebebeb;
+}
+
+.leaveRequest {
+  margin: 100px 0 0 0;
+  padding: 100px 0;
+  background: url("/img/leaveRequst-bg.jpg") no-repeat 50% 20%;
+  background-size: cover;
+}
+
+.leaveRequest .card {
+  border: none;
+  border-radius: 0;
+}
+
+.leaveRequest .card-title {
+  font-size: 35px;
+  font-weight: 400;
+  color: #b30000;
+  margin: 30px 0;
+}
+
+.leaveRequest .card-text {
+  font-size: 19px;
+  line-height: 28px;
+  margin: 0 0 30px 0;
+}
+
+.leaveRequest .form-control {
+  border-radius: 0;
+  padding: 20px 15px;
+}
+
+.leaveRequest__btn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0 20px 0;
+}
+
+.leaveRequest__btn .nav-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #b30000;
+  color: #fff;
+  border: 2px solid #b30000;
+  border-radius: 0;
+  font-size: 17px;
+  height: 56px;
+  padding: 0 55px;
+  font-weight: 700;
+  position: relative;
+}
+
+.leaveRequest__btn .nav-btn:hover {
+  background: #fff;
+  color: #b30000;
 }
 
 .footer {
